@@ -16,20 +16,12 @@ data <- read.csv(url("https://archive.ics.uci.edu/ml/machine-learning-databases/
                                "hours-per-week", "native-county", 
                                "income"),
                  skip = 10)
-# colnames(data) <- c("age", "workclass", 
-#                     "fnlwgt", "education", "education-num", 
-#                     "marital-status","occupation", 
-#                     "relationship", "race", "sex", 
-#                     "capital-gain", "capital-loss", 
-#                     "hours-per-week", "native-county", 
-#                     "income")
 dim(data)
 data[1:5,]
 
 ### Part 2 - Filtering
 df1 <- data %>%
   filter(education != " Preschool")
-## question: data does not include variable names Preschool
 
 df2 <- df1 %>%
   filter(education.num >=  quantile(df1$education.num, 0.25) 
