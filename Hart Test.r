@@ -81,16 +81,3 @@ model <- naiveBayes(as.matrix(trainmatrix),as.factor(traindata$Tag))
 # PREDICTION
 results <- predict(model,as.matrix(testmatrix))
 
-
-
-
-
-### Comments: 
-# I'm more proficient with R, so due to the time limit,
-# I choose R as my language this time. 
-# But Python is not a problem for me.
-# If python is required, I can review it and use it in a short time.
-# I have not learn Naive Bayes on text classfication before, so
-# the results seems not good. But I am willing to meet challenges
-# during work! And I believe that I will do a good job.
-
